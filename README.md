@@ -22,7 +22,7 @@
     &nbsp;
     <a href="mailto:srimanvithv@gmail.com"><img src="./media/buttons/email.svg" alt="Email" /></a>
     &nbsp;
-    <img src="./media/buttons/views.svg" alt="Profile views" />
+    <img src="https://komarev.com/ghpvc/?username=vsrimanvith&label=Profile%20views&color=6366f1&style=for-the-badge" alt="Profile views" />
   </p>
 
 </div>
