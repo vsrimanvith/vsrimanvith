@@ -37,7 +37,7 @@ def card_shell(width: int, height: int, title: str, body: str) -> str:
 
 
 def write_views_pill(login: str) -> None:
-    """Rounded non-clickable profile-views badge with live komarev count."""
+    """Rounded non-clickable profile-views badge with live count (label | count)."""
     import re
 
     try:
@@ -55,26 +55,37 @@ def write_views_pill(login: str) -> None:
     except Exception:
         views = "0"
 
-    views_label = f"Profile views  {views}"
-    vh, vpad, vicon, vgap = 36, 16, 22, 8
-    vw = int(vpad + vicon + vgap + max(len(views_label) * 7.2, 40) + vpad)
-    vr = vh / 2.0
-    views_icon = (
-        '<path fill="#ffffff" d="M12 5C7 5 2.73 8.11 1 12.5 2.73 16.89 7 20 12 20s9.27-3.11 '
-        "11-7.5C21.27 8.11 17 5 12 5zm0 12.5a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-8a3 3 0 1 0 "
-        '0 6 3 3 0 0 0 0-6z"/>'
-    )
+    label = "Profile views"
+    label_w = 12 + len(label) * 7.2 + 12
+    count_w = 12 + len(views) * 7.8 + 12
+    h = 28
+    w = label_w + count_w
+    r = h / 2
     (MEDIA / "buttons").mkdir(parents=True, exist_ok=True)
-    views_svg = (
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{vw}" height="{vh}" '
-        f'viewBox="0 0 {vw} {vh}" role="img" aria-label="{esc(views_label)}">'
-        f'<rect width="{vw}" height="{vh}" rx="{vr}" ry="{vr}" fill="#6366F1"/>'
-        f'<g transform="translate({vpad},{(vh - 20) / 2}) scale(0.83)">{views_icon}</g>'
-        f'<text x="{vpad + vicon + vgap}" y="{vh / 2 + 5}" fill="#ffffff" '
-        f'font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" '
-        f'font-weight="600">{esc(views_label)}</text></svg>'
-    )
-    (MEDIA / "buttons" / "views.svg").write_text(views_svg, encoding="utf-8")
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w:.0f}" height="{h}" role="img" aria-label="{label}: {views}">
+  <title>{label}: {views}</title>
+  <linearGradient id="s" x2="0" y2="100%">
+    <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+    <stop offset="1" stop-opacity=".1"/>
+  </linearGradient>
+  <clipPath id="r">
+    <rect width="{w:.0f}" height="{h}" rx="{r}" ry="{r}"/>
+  </clipPath>
+  <g clip-path="url(#r)">
+    <rect width="{label_w:.0f}" height="{h}" fill="#312e81"/>
+    <rect x="{label_w:.0f}" width="{count_w:.0f}" height="{h}" fill="#6366f1"/>
+    <rect width="{w:.0f}" height="{h}" fill="url(#s)"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="12">
+    <text x="{label_w/2:.1f}" y="18" fill="#010101" fill-opacity=".3">{label}</text>
+    <text x="{label_w/2:.1f}" y="17">{label}</text>
+    <text x="{label_w + count_w/2:.1f}" y="18" fill="#010101" fill-opacity=".3">{views}</text>
+    <text x="{label_w + count_w/2:.1f}" y="17" font-weight="700">{views}</text>
+  </g>
+</svg>
+"""
+    (MEDIA / "buttons" / "views.svg").write_text(svg, encoding="utf-8")
+
 
 
 def main() -> None:
