@@ -39,20 +39,15 @@ def card_shell(width: int, height: int, title: str, body: str) -> str:
 
 def write_views_pill(login: str) -> None:
     """Rounded non-clickable profile-views PNG with live count (GitHub strips SVG text)."""
-    import os
     import re
     from PIL import Image, ImageDraw, ImageFont
-
-    # Counter key (not GitHub login). Change this to reset the count to ~0.
-    # Official komarev reset for the old username requires https://yhype.me/ghpvc
-    counter_id = os.environ.get("PROFILE_VIEWS_ID") or f"{login}-v2"
 
     try:
         raw = subprocess.check_output(
             [
                 "curl",
                 "-fsSL",
-                f"https://komarev.com/ghpvc/?username={counter_id}&label=Profile%20views&color=6366f1",
+                f"https://komarev.com/ghpvc/?username={login}&label=Profile%20views&color=6366f1",
             ],
             text=True,
             timeout=30,
