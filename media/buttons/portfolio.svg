@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="36" viewBox="0 0 128 36" role="img" aria-label="Portfolio">
+  <rect width="128" height="36" rx="18.0" ry="18.0" fill="#0D9488"/>
+  <g transform="translate(16,8.0) scale(0.83)">
+    <path fill="#ffffff" d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm2 3v6h12V9H6z"/><path fill="#ffffff" d="M9 4h6v2H9z"/>
+  </g>
+  <text x="46" y="23.0" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">Portfolio</text>
+</svg>

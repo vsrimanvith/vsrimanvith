@@ -12,22 +12,17 @@
   </p>
 
   <p>
-    <a href="https://github.com/vsrimanvith">
-      <img src="https://img.shields.io/badge/GitHub-24292F?style=for-the-badge&logo=github&logoColor=white" height="28" alt="GitHub" />
-    </a>
-    <a href="https://www.linkedin.com/in/vaddeboyina-sri-manvith/">
-      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" height="28" alt="LinkedIn" />
-    </a>
-    <a href="https://scholar.google.com/citations?user=9MLDr-8AAAAJ&hl=en">
-      <img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" height="28" alt="Google Scholar" />
-    </a>
-    <a href="https://vsrimanvith.github.io">
-      <img src="https://img.shields.io/badge/Portfolio-0D9488?style=for-the-badge&logo=vercel&logoColor=white" height="28" alt="Portfolio" />
-    </a>
-    <a href="mailto:srimanvithv@gmail.com">
-      <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" height="28" alt="Email" />
-    </a>
-    <img src="https://komarev.com/ghpvc/?username=vsrimanvith&label=Profile%20views&color=6366f1&style=for-the-badge" height="28" alt="Profile views" />
+    <a href="https://github.com/vsrimanvith"><img src="./media/buttons/github.svg" alt="GitHub" /></a>
+    &nbsp;
+    <a href="https://www.linkedin.com/in/vaddeboyina-sri-manvith/"><img src="./media/buttons/linkedin.svg" alt="LinkedIn" /></a>
+    &nbsp;
+    <a href="https://scholar.google.com/citations?user=9MLDr-8AAAAJ&hl=en"><img src="./media/buttons/scholar.svg" alt="Google Scholar" /></a>
+    &nbsp;
+    <a href="https://vsrimanvith.github.io"><img src="./media/buttons/portfolio.svg" alt="Portfolio" /></a>
+    &nbsp;
+    <a href="mailto:srimanvithv@gmail.com"><img src="./media/buttons/email.svg" alt="Email" /></a>
+    &nbsp;
+    <img src="./media/buttons/views.svg" alt="Profile views" />
   </p>
 
 </div>

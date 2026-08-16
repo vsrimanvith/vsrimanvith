@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="165" height="36" viewBox="0 0 165 36" role="img" aria-label="Google Scholar">
+  <rect width="165" height="36" rx="18.0" ry="18.0" fill="#4285F4"/>
+  <g transform="translate(16,8.0) scale(0.83)">
+    <path fill="#ffffff" d="M12 3 1 9l4 2.18V17h2v-4.5L12 15l9-4.91V17h2V9L12 3zm0 10.2L4.8 9 12 5.2 19.2 9 12 13.2z"/>
+  </g>
+  <text x="46" y="23.0" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">Google Scholar</text>
+</svg>
