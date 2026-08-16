@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="184" height="36" viewBox="0 0 184 36" role="img" aria-label="Profile views  20">
+  <rect width="184" height="36" rx="18.0" ry="18.0" fill="#6366F1"/>
+  <g transform="translate(16,8.0) scale(0.83)">
+    <path fill="#ffffff" d="M12 5C7 5 2.73 8.11 1 12.5 2.73 16.89 7 20 12 20s9.27-3.11 11-7.5C21.27 8.11 17 5 12 5zm0 12.5a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-8a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
+  </g>
+  <text x="46" y="23.0" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">Profile views  20</text>
+</svg>
