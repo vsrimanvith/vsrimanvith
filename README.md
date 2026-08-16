@@ -35,69 +35,26 @@
 
 Software engineer who likes building systems that stay quiet in production — clear APIs, careful edges, and interfaces people can actually use.
 
-### Now
+**Right now** I’m an SDE at **Amazon** on **Physical Security · Optics Video**, working on tools around CCTV video workflows with a **Java** backend and **React** frontend.
 
-<p>
-  <a href="https://www.amazon.jobs/"><img src="./media/buttons/amazon.svg" alt="Amazon · SDE" height="36" /></a>
-  &nbsp;
-  <img src="./media/buttons/optics.svg" alt="Optics Video" height="36" />
-</p>
-
-Building tools around **CCTV video workflows** with:
-
-<p>
-  <img src="./media/buttons/java.svg" alt="Java" height="36" />
-  &nbsp;
-  <img src="./media/buttons/react.svg" alt="React" height="36" />
-</p>
-
-- Internal tools for Physical Security video workflows
-- Clear **APIs**, solid reliability, and product UX that stays out of the way
-- Always happy to talk backend, full-stack, NLP, or research software
+- Building internal tools for Physical Security video workflows
+- Sweating the details: APIs, reliability, and product UX that doesn’t get in the way
+- Always up for a chat about backend, full-stack, NLP, or research software
 
 <br clear="right" />
 
-### Previously
+**Before that** I worked across a few different shapes of software:
 
-<p>
-  <img src="./media/icons/clinical.svg" width="48" height="48" alt="Clinical research" align="left" />
-  &nbsp;
-  <img src="./media/buttons/usc-atri.svg" alt="USC ATRI" height="36" />
-  <br />
-  &nbsp;&nbsp;Full-stack systems for clinical research
-</p>
+- **USC ATRI** — Full-stack systems for clinical research
+- **TCS** — NLP and search / knowledge-graph products
+- **IIT Hyderabad** — Network anomaly detection research
 
-<br clear="left" />
+**Education**
 
-<p>
-  <img src="./media/icons/nlp.svg" width="48" height="48" alt="NLP" align="left" />
-  &nbsp;
-  <img src="./media/buttons/tcs.svg" alt="TCS" height="36" />
-  <br />
-  &nbsp;&nbsp;NLP and search / knowledge-graph products
-</p>
+- **M.S., Computer Science** — University of Southern California
+- **B.Tech, CSE (Gold Medalist)** — JNTU Hyderabad (VNR VJIET)
 
-<br clear="left" />
-
-<p>
-  <img src="./media/icons/network.svg" width="48" height="48" alt="Network research" align="left" />
-  &nbsp;
-  <img src="./media/buttons/iit-hyd.svg" alt="IIT Hyderabad" height="36" />
-  <br />
-  &nbsp;&nbsp;Network anomaly detection research
-</p>
-
-<br clear="left" />
-
-### Education
-
-<p>
-  <img src="./media/buttons/edu-usc.svg" alt="M.S. CS · USC" height="36" />
-  &nbsp;
-  <img src="./media/buttons/edu-jntu.svg" alt="B.Tech CSE · Gold Medalist" height="36" />
-</p>
-
-> 💡 *"Everyone should learn how to program because it teaches you how to think."*  
+> *"Everyone should learn how to program because it teaches you how to think."*  
 > — Steve Jobs
 
 ---

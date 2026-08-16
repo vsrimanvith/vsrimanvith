@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="142" height="36" viewBox="0 0 142 36" role="img" aria-label="Optics Video">
-  <rect width="142" height="36" rx="18" ry="18" fill="#0D9488"/>
-  <g transform="translate(14,8.5) scale(0.75)">
-    <path fill="#fff" d="M12 5c-4.5 0-8.3 2.7-10 6.5 1.7 3.8 5.5 6.5 10 6.5s8.3-2.7 10-6.5C20.3 7.7 16.5 5 12 5zm0 11a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm0-7.2a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4z"/>
-  </g>
-  <text x="44" y="23" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">Optics Video</text>
-</svg>
