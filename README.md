@@ -97,19 +97,20 @@ Software engineer who likes building systems that stay quiet in production — c
 
 ## GitHub Stats
 
-<!-- Hosted locally — third-party stats APIs are often down (503/402). -->
 <div align="center">
 
-  <img src="./media/stats.svg" alt="GitHub stats" />
-  <img src="./media/top-langs.svg" alt="Top languages" />
+  <img height="165" src="https://github-stats-extended.vercel.app/api?username=vsrimanvith&show_icons=true&theme=dark&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats" />
+  <img height="165" src="https://github-stats-extended.vercel.app/api/top-langs/?username=vsrimanvith&layout=compact&theme=dark&hide_border=true&langs_count=8" alt="Top languages" />
 
   <br /><br />
 
-  <img src="./media/streak.svg" alt="GitHub streak" />
+  <img src="https://streak-stats.demolab.com/?user=vsrimanvith&theme=dark&hide_border=true" alt="GitHub streak" />
 
   <br /><br />
 
-  <img src="./media/highlights.svg" alt="Profile highlights" />
+  <img width="400" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=vsrimanvith&theme=github_dark" alt="Productive time" />
+  &nbsp;
+  <img width="400" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=vsrimanvith&theme=github_dark" alt="Repos per language" />
 
 </div>
 
