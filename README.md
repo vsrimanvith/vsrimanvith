@@ -120,6 +120,6 @@ Software engineer who likes building systems that stay quiet in production — c
 
 <div align="center">
 
-  **Thanks for visiting** — more on my [portfolio](https://vsrimanvith.github.io) · [email me](mailto:srimanvithv@gmail.com)
+  **Thanks for visiting**
 
 </div>
