@@ -34,6 +34,49 @@ def card_shell(width: int, height: int, title: str, body: str) -> str:
 '''
 
 
+
+
+def write_views_pill(login: str) -> None:
+    """Rounded non-clickable profile-views badge with live komarev count."""
+    import re
+
+    try:
+        raw = subprocess.check_output(
+            [
+                "curl",
+                "-fsSL",
+                f"https://komarev.com/ghpvc/?username={login}&label=Profile%20views&color=6366f1",
+            ],
+            text=True,
+            timeout=30,
+        )
+        nums = re.findall(r">(\d+)<", raw)
+        views = nums[-1] if nums else "0"
+    except Exception:
+        views = "0"
+
+    views_label = f"Profile views  {views}"
+    vh, vpad, vicon, vgap = 36, 16, 22, 8
+    vw = int(vpad + vicon + vgap + max(len(views_label) * 7.2, 40) + vpad)
+    vr = vh / 2.0
+    views_icon = (
+        '<path fill="#ffffff" d="M12 5C7 5 2.73 8.11 1 12.5 2.73 16.89 7 20 12 20s9.27-3.11 '
+        "11-7.5C21.27 8.11 17 5 12 5zm0 12.5a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-8a3 3 0 1 0 "
+        '0 6 3 3 0 0 0 0-6z"/>'
+    )
+    (MEDIA / "buttons").mkdir(parents=True, exist_ok=True)
+    views_svg = (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{vw}" height="{vh}" '
+        f'viewBox="0 0 {vw} {vh}" role="img" aria-label="{esc(views_label)}">'
+        f'<rect width="{vw}" height="{vh}" rx="{vr}" ry="{vr}" fill="#6366F1"/>'
+        f'<g transform="translate({vpad},{(vh - 20) / 2}) scale(0.83)">{views_icon}</g>'
+        f'<text x="{vpad + vicon + vgap}" y="{vh / 2 + 5}" fill="#ffffff" '
+        f'font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" '
+        f'font-weight="600">{esc(views_label)}</text></svg>'
+    )
+    (MEDIA / "buttons" / "views.svg").write_text(views_svg, encoding="utf-8")
+
+
 def main() -> None:
     MEDIA.mkdir(parents=True, exist_ok=True)
     import os
@@ -168,6 +211,7 @@ def main() -> None:
         card_shell(520, 175, "Profile Highlights", "\n".join(parts)),
         encoding="utf-8",
     )
+    write_views_pill(login)
     print("Generated media/stats.svg, media/top-langs.svg, media/streak.svg, media/highlights.svg")
 
 
