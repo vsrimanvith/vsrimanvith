@@ -31,34 +31,48 @@
 
 ## About
 
+<img align="right" alt="Coding" width="320" src="https://raw.githubusercontent.com/onimur/.github/master/.resources/git-header.svg" />
+
 Software engineer who likes building systems that stay quiet in production — clear APIs, careful edges, and interfaces people can actually use.
 
-Right now I’m an **SDE at Amazon** on **Physical Security · Optics Video**, working on tools around CCTV video workflows with a **Java** backend and **React** frontend.
+### Now
 
-Before that I worked across a few different shapes of software:
+<a href="https://www.amazon.jobs/"><img src="https://img.shields.io/badge/SDE-Amazon-232F3E?style=for-the-badge&logo=amazon&logoColor=FF9900" alt="Amazon" /></a>
+&nbsp;
+<img src="https://img.shields.io/badge/Physical_Security-Optics_Video-0D9488?style=for-the-badge&labelColor=0f172a" alt="Optics Video" />
 
-| | |
-|---|---|
-| **USC ATRI** | Full-stack systems for clinical research |
-| **TCS** | NLP and search / knowledge-graph products |
-| **IIT Hyderabad** | Network anomaly detection research |
+Building tools around **CCTV video workflows** with:
 
-**Education**
-- **M.S., Computer Science** — University of Southern California
-- **B.Tech, CSE (Gold Medalist)** — JNTU Hyderabad (VNR VJIET)
+<img src="https://img.shields.io/badge/Java-Backend-f89820?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
+<img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=flat-square&logo=react&logoColor=000" alt="React" />
 
-🌐 [vsrimanvith.github.io](https://vsrimanvith.github.io)
+Focus right now:
+- Internal tools for Physical Security video workflows
+- Clear **APIs**, solid reliability, and product UX that stays out of the way
+- Always happy to talk backend, full-stack, NLP, or research software
 
-> *"Everyone should learn how to program because it teaches you how to think."*  
+<br clear="right" />
+
+### Previously
+
+| Role | What I built |
+|:---|:---|
+| <img src="https://img.shields.io/badge/USC_ATRI-990000?style=flat-square" alt="USC ATRI" /> | Full-stack systems for clinical research |
+| <img src="https://img.shields.io/badge/TCS-1A4C8B?style=flat-square" alt="TCS" /> | NLP and search / knowledge-graph products |
+| <img src="https://img.shields.io/badge/IIT_Hyderabad-7C3AED?style=flat-square" alt="IIT Hyderabad" /> | Network anomaly detection research |
+
+### Education
+
+<img src="https://img.shields.io/badge/M.S.%20Computer%20Science-University%20of%20Southern%20California-990000?style=for-the-badge&labelColor=0f172a" alt="USC" />
+
+<img src="https://img.shields.io/badge/B.Tech%20CSE%20·%20Gold%20Medalist-JNTU%20Hyderabad%20(VNR%20VJIET)-F59E0B?style=for-the-badge&labelColor=0f172a" alt="JNTU" />
+
+### Links & note
+
+<a href="https://vsrimanvith.github.io"><img src="./media/buttons/portfolio.svg" alt="Portfolio" /></a>
+
+> 💡 *"Everyone should learn how to program because it teaches you how to think."*  
 > — Steve Jobs
-
----
-
-## Currently
-
-- Building internal tools for **Physical Security video** workflows at Amazon
-- Sweating the details: **APIs**, reliability, and product UX that doesn’t get in the way
-- Always up for a chat about backend, full-stack, NLP, or research software
 
 ---
 
