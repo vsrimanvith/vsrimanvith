@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="36" viewBox="0 0 128 36" role="img" aria-label="USC ATRI">
+  <rect width="128" height="36" rx="18" ry="18" fill="#990000"/>
+  <g transform="translate(14,7.5) scale(0.85)">
+    <path fill="#fff" d="M11 4h2v5h5v2h-5v5h-2v-5H6V9h5V4z"/>
+    <path fill="#fff" d="M5 18h14v2H5z"/>
+  </g>
+  <text x="42" y="23" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">USC ATRI</text>
+</svg>
