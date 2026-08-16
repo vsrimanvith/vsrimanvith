@@ -22,7 +22,7 @@
     &nbsp;
     <a href="mailto:srimanvithv@gmail.com"><img src="./media/buttons/email.svg" alt="Email" /></a>
     &nbsp;
-    <img src="./media/buttons/views.png" alt="Profile views" />
+    <img src="./media/buttons/views.png" height="36" alt="Profile views" />
   </p>
 
 </div>
