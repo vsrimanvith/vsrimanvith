@@ -34,74 +34,6 @@ def card_shell(width: int, height: int, title: str, body: str) -> str:
 '''
 
 
-
-
-
-def write_views_pill(login: str) -> None:
-    """Rounded non-clickable profile-views PNG with live count (GitHub strips SVG text)."""
-    import re
-    from PIL import Image, ImageDraw, ImageFont
-
-    try:
-        raw = subprocess.check_output(
-            [
-                "curl",
-                "-fsSL",
-                f"https://komarev.com/ghpvc/?username={login}&label=Profile%20views&color=6366f1",
-            ],
-            text=True,
-            timeout=30,
-        )
-        nums = re.findall(r">(\d+)<", raw)
-        views = nums[-1] if nums else "0"
-    except Exception:
-        views = "0"
-
-    label = "Profile views"
-    scale = 2
-    h = 36 * scale
-    pad_x = 16 * scale
-    try:
-        font = ImageFont.truetype("/System/Library/Fonts/Supplemental/Arial Bold.ttf", 13 * scale)
-        font_count = ImageFont.truetype("/System/Library/Fonts/Supplemental/Arial Bold.ttf", 14 * scale)
-    except Exception:
-        # Linux Actions runners
-        try:
-            font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 13 * scale)
-            font_count = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 14 * scale)
-        except Exception:
-            font = ImageFont.load_default()
-            font_count = font
-
-    probe = ImageDraw.Draw(Image.new("RGB", (10, 10)))
-    lw = probe.textlength(label, font=font)
-    cw = probe.textlength(views, font=font_count)
-    seg1 = int(pad_x + lw + pad_x)
-    seg2 = int(pad_x + cw + pad_x)
-    w = seg1 + seg2
-    r = h // 2
-
-    base = Image.new("RGBA", (w, h), (0, 0, 0, 0))
-    bd = ImageDraw.Draw(base)
-    bd.rounded_rectangle([0, 0, w - 1, h - 1], radius=r, fill=(49, 46, 129, 255))
-    right = Image.new("RGBA", (w, h), (0, 0, 0, 0))
-    ImageDraw.Draw(right).rectangle([seg1, 0, w, h], fill=(99, 102, 241, 255))
-    mask = Image.new("L", (w, h), 0)
-    ImageDraw.Draw(mask).rounded_rectangle([0, 0, w - 1, h - 1], radius=r, fill=255)
-    base.paste(right, (0, 0), right)
-
-    img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
-    img.paste(base, (0, 0), mask)
-    draw = ImageDraw.Draw(img)
-    ty = (h - (13 * scale)) // 2 - scale
-    draw.text((pad_x, ty), label, font=font, fill=(255, 255, 255, 255))
-    draw.text((seg1 + pad_x, ty - scale), views, font=font_count, fill=(255, 255, 255, 255))
-
-    (MEDIA / "buttons").mkdir(parents=True, exist_ok=True)
-    img.save(MEDIA / "buttons" / "views.png", "PNG")
-
-
-
 def main() -> None:
     MEDIA.mkdir(parents=True, exist_ok=True)
     import os
@@ -236,7 +168,6 @@ def main() -> None:
         card_shell(520, 175, "Profile Highlights", "\n".join(parts)),
         encoding="utf-8",
     )
-    write_views_pill(login)
     print("Generated media/stats.svg, media/top-langs.svg, media/streak.svg, media/highlights.svg")
 
 
