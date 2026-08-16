@@ -1,7 +1,7 @@
 <!-- Profile README for https://github.com/vsrimanvith -->
 <div align="center">
 
-  <h1>Sri Manvith Vaddeboyina</h1>
+  <h1>Hi I'm Sri Manvith Vaddeboyina! 👋</h1>
 
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=720&height=45&lines=Software+Developer+%7C+Researcher;SDE+at+Amazon+%C2%B7+Physical+Security;Full-stack+%C2%B7+NLP+%C2%B7+Systems" alt="Roles" />
