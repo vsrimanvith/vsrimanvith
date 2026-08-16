@@ -30,7 +30,7 @@
 
 ## About
 
-<img align="right" alt="Coding" width="320" src="https://raw.githubusercontent.com/onimur/.github/master/.resources/git-header.svg" />
+<img align="right" alt="Coding" width="300" src="./media/about-coding.gif" />
 
 Software engineer who likes building systems that stay quiet in production — clear APIs, careful edges, and interfaces people can actually use.
 
