@@ -28,7 +28,7 @@
 
 ---
 
-## About
+## About 👨🏽‍💻
 
 <img align="right" alt="Coding" width="300" src="./media/about-coding.gif" />
 
