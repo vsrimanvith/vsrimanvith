@@ -10,7 +10,7 @@
   
   <g font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="14">
     <text x="22" y="70" fill="#8b949e">Total Contributions</text>
-    <text x="250" y="70" fill="#c9d1d9" font-weight="700">25</text>
+    <text x="250" y="70" fill="#c9d1d9" font-weight="700">24</text>
     <text x="22" y="100" fill="#8b949e">Public Repositories</text>
     <text x="250" y="100" fill="#c9d1d9" font-weight="700">29</text>
     <text x="22" y="130" fill="#8b949e">Followers</text>
