@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="180" viewBox="0 0 540 180" role="img" aria-label="Contribution Streak">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+  </defs>
+  <rect width="540" height="180" rx="12" fill="url(#bg)" stroke="#30363d" stroke-width="1"/>
+  <text x="22" y="34" fill="#58a6ff" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="16" font-weight="700">Contribution Streak</text>
+  
+  <g font-family="Segoe UI, Ubuntu, Sans-Serif" text-anchor="middle">
+    <text x="105" y="85" fill="#8b949e" font-size="12">Total Contributions</text>
+    <text x="105" y="118" fill="#58a6ff" font-size="30" font-weight="700">24</text>
+    <text x="270" y="85" fill="#8b949e" font-size="12">Current Streak</text>
+    <text x="270" y="118" fill="#3fb950" font-size="30" font-weight="700">1</text>
+    <text x="435" y="85" fill="#8b949e" font-size="12">Longest Streak</text>
+    <text x="435" y="118" fill="#d29922" font-size="30" font-weight="700">1</text>
+    <text x="270" y="155" fill="#8b949e" font-size="12">Updated 2026-08-16 UTC</text>
+  </g>
+
+</svg>

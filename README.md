@@ -89,27 +89,20 @@ Previously: full-stack and clinical-research software at **USC ATRI**, NLP/searc
 
 ## GitHub Stats
 
+<!-- Hosted locally — third-party stats APIs are often down (503/402). -->
 <div align="center">
 
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=vsrimanvith&show_icons=true&theme=transparent&hide_border=true&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9&count_private=true" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vsrimanvith&layout=compact&theme=transparent&hide_border=true&title_color=58A6FF&text_color=C9D1D9&langs_count=8" alt="Top languages" />
+  <img src="./media/stats.svg" alt="GitHub stats" />
+  <img src="./media/top-langs.svg" alt="Top languages" />
 
-  <br />
+  <br /><br />
 
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=vsrimanvith&theme=transparent&hide_border=true&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF" alt="GitHub streak" />
+  <img src="./media/streak.svg" alt="GitHub streak" />
 
-  <br />
+  <br /><br />
 
-  <img src="https://github-profile-trophy.vercel.app/?username=vsrimanvith&theme=onedark&no-frame=true&no-bg=true&column=7&margin-w=12&margin-h=8" alt="GitHub trophies" />
+  <img src="./media/highlights.svg" alt="Profile highlights" />
 
-</div>
-
----
-
-## Activity
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=vsrimanvith&bg_color=00000000&color=58A6FF&line=58A6FF&point=C9D1D9&area=true&hide_border=true" alt="Contribution graph" width="100%" />
 </div>
 
 ---
