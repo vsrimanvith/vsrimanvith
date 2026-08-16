@@ -21,8 +21,6 @@
     <a href="https://vsrimanvith.github.io"><img src="./media/buttons/portfolio.svg" alt="Portfolio" /></a>
     &nbsp;
     <a href="mailto:srimanvithv@gmail.com"><img src="./media/buttons/email.svg" alt="Email" /></a>
-    &nbsp;
-    <img src="https://komarev.com/ghpvc/?username=vsrimanvith&label=Profile%20views&color=6366f1&style=flat" height="28" alt="Profile views" />
   </p>
 
 </div>
@@ -121,5 +119,9 @@ Software engineer who likes building systems that stay quiet in production — c
 <div align="center">
 
   **Thanks for visiting**
+
+  <br /><br />
+
+  <img src="https://komarev.com/ghpvc/?username=vsrimanvith&label=Profile%20views&color=6366f1&style=for-the-badge" alt="Profile views" />
 
 </div>
