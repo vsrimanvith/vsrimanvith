@@ -20,15 +20,15 @@
     <text x="360" y="90" fill="#8b949e" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="12">5</text>
 
 
-    <text x="22" y="118" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="13">HTML</text>
+    <text x="22" y="118" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="13">Python</text>
     <rect x="130" y="107" width="220" height="12" rx="6" fill="#21262d"/>
-    <rect x="130" y="107" width="66" height="12" rx="6" fill="#e34c26"/>
-    <text x="360" y="118" fill="#8b949e" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="12">3</text>
+    <rect x="130" y="107" width="88" height="12" rx="6" fill="#3572A5"/>
+    <text x="360" y="118" fill="#8b949e" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="12">4</text>
 
 
-    <text x="22" y="146" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="13">Python</text>
+    <text x="22" y="146" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="13">HTML</text>
     <rect x="130" y="135" width="220" height="12" rx="6" fill="#21262d"/>
-    <rect x="130" y="135" width="66" height="12" rx="6" fill="#3572A5"/>
+    <rect x="130" y="135" width="66" height="12" rx="6" fill="#e34c26"/>
     <text x="360" y="146" fill="#8b949e" font-family="Segoe UI, Ubuntu, Sans-Serif" font-size="12">3</text>
 
 
