@@ -36,9 +36,11 @@ def card_shell(width: int, height: int, title: str, body: str) -> str:
 
 
 
+
 def write_views_pill(login: str) -> None:
-    """Rounded non-clickable profile-views badge with live count (label | count)."""
+    """Rounded non-clickable profile-views PNG with live count (GitHub strips SVG text)."""
     import re
+    from PIL import Image, ImageDraw, ImageFont
 
     try:
         raw = subprocess.check_output(
@@ -56,35 +58,47 @@ def write_views_pill(login: str) -> None:
         views = "0"
 
     label = "Profile views"
-    label_w = 12 + len(label) * 7.2 + 12
-    count_w = 12 + len(views) * 7.8 + 12
-    h = 28
-    w = label_w + count_w
-    r = h / 2
+    scale = 2
+    h = 36 * scale
+    pad_x = 16 * scale
+    try:
+        font = ImageFont.truetype("/System/Library/Fonts/Supplemental/Arial Bold.ttf", 13 * scale)
+        font_count = ImageFont.truetype("/System/Library/Fonts/Supplemental/Arial Bold.ttf", 14 * scale)
+    except Exception:
+        # Linux Actions runners
+        try:
+            font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 13 * scale)
+            font_count = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 14 * scale)
+        except Exception:
+            font = ImageFont.load_default()
+            font_count = font
+
+    probe = ImageDraw.Draw(Image.new("RGB", (10, 10)))
+    lw = probe.textlength(label, font=font)
+    cw = probe.textlength(views, font=font_count)
+    seg1 = int(pad_x + lw + pad_x)
+    seg2 = int(pad_x + cw + pad_x)
+    w = seg1 + seg2
+    r = h // 2
+
+    base = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    bd = ImageDraw.Draw(base)
+    bd.rounded_rectangle([0, 0, w - 1, h - 1], radius=r, fill=(49, 46, 129, 255))
+    right = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    ImageDraw.Draw(right).rectangle([seg1, 0, w, h], fill=(99, 102, 241, 255))
+    mask = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(mask).rounded_rectangle([0, 0, w - 1, h - 1], radius=r, fill=255)
+    base.paste(right, (0, 0), right)
+
+    img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    img.paste(base, (0, 0), mask)
+    draw = ImageDraw.Draw(img)
+    ty = (h - (13 * scale)) // 2 - scale
+    draw.text((pad_x, ty), label, font=font, fill=(255, 255, 255, 255))
+    draw.text((seg1 + pad_x, ty - scale), views, font=font_count, fill=(255, 255, 255, 255))
+
     (MEDIA / "buttons").mkdir(parents=True, exist_ok=True)
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w:.0f}" height="{h}" role="img" aria-label="{label}: {views}">
-  <title>{label}: {views}</title>
-  <linearGradient id="s" x2="0" y2="100%">
-    <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
-    <stop offset="1" stop-opacity=".1"/>
-  </linearGradient>
-  <clipPath id="r">
-    <rect width="{w:.0f}" height="{h}" rx="{r}" ry="{r}"/>
-  </clipPath>
-  <g clip-path="url(#r)">
-    <rect width="{label_w:.0f}" height="{h}" fill="#312e81"/>
-    <rect x="{label_w:.0f}" width="{count_w:.0f}" height="{h}" fill="#6366f1"/>
-    <rect width="{w:.0f}" height="{h}" fill="url(#s)"/>
-  </g>
-  <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="12">
-    <text x="{label_w/2:.1f}" y="18" fill="#010101" fill-opacity=".3">{label}</text>
-    <text x="{label_w/2:.1f}" y="17">{label}</text>
-    <text x="{label_w + count_w/2:.1f}" y="18" fill="#010101" fill-opacity=".3">{views}</text>
-    <text x="{label_w + count_w/2:.1f}" y="17" font-weight="700">{views}</text>
-  </g>
-</svg>
-"""
-    (MEDIA / "buttons" / "views.svg").write_text(svg, encoding="utf-8")
+    img.save(MEDIA / "buttons" / "views.png", "PNG")
 
 
 
