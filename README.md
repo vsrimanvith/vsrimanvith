@@ -12,12 +12,22 @@
   </p>
 
   <p>
-    <a href="https://github.com/vsrimanvith"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
-    <a href="https://www.linkedin.com/in/vaddeboyina-sri-manvith/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-    <a href="https://scholar.google.com/citations?user=9MLDr-8AAAAJ&hl=en"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=flat-square&logo=googlescholar&logoColor=white" alt="Google Scholar" /></a>
-    <a href="https://vsrimanvith.github.io"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=flat-square&logo=githubpages&logoColor=white" alt="Portfolio" /></a>
-    <a href="mailto:srimanvithv@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
-    <img src="https://komarev.com/ghpvc/?username=vsrimanvith&label=Views&color=58a6ff&style=flat-square" alt="Profile views" />
+    <a href="https://github.com/vsrimanvith">
+      <img src="https://img.shields.io/badge/GitHub-24292F?style=for-the-badge&logo=github&logoColor=white" height="28" alt="GitHub" />
+    </a>
+    <a href="https://www.linkedin.com/in/vaddeboyina-sri-manvith/">
+      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" height="28" alt="LinkedIn" />
+    </a>
+    <a href="https://scholar.google.com/citations?user=9MLDr-8AAAAJ&hl=en">
+      <img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" height="28" alt="Google Scholar" />
+    </a>
+    <a href="https://vsrimanvith.github.io">
+      <img src="https://img.shields.io/badge/Portfolio-0D9488?style=for-the-badge&logo=vercel&logoColor=white" height="28" alt="Portfolio" />
+    </a>
+    <a href="mailto:srimanvithv@gmail.com">
+      <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" height="28" alt="Email" />
+    </a>
+    <img src="https://komarev.com/ghpvc/?username=vsrimanvith&label=Profile%20views&color=6366f1&style=for-the-badge" height="28" alt="Profile views" />
   </p>
 
 </div>
