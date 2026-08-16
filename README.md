@@ -8,7 +8,7 @@
   </a>
 
   <p>
-    Building reliable software across backends, product interfaces, and research systems.
+    Backend · full-stack · NLP · systems that hold up in the real world
   </p>
 
   <p>
@@ -31,25 +31,34 @@
 
 ## About
 
-I'm a software engineer focused on **dependable systems** — from APIs and services to the interfaces people use every day.
+Software engineer who likes building systems that stay quiet in production — clear APIs, careful edges, and interfaces people can actually use.
 
-Currently an **SDE at Amazon** on Physical Security (Optics Video), working on tools around CCTV video workflows with a **Java** backend and **React** frontend.
+Right now I’m an **SDE at Amazon** on **Physical Security · Optics Video**, working on tools around CCTV video workflows with a **Java** backend and **React** frontend.
 
-Previously: full-stack and clinical-research software at **USC ATRI**, NLP/search systems at **TCS**, and network anomaly detection research at **IIT Hyderabad**.
+Before that I worked across a few different shapes of software:
 
-- **M.S. Computer Science** — University of Southern California
-- **B.Tech CSE (Gold Medalist)** — JNTU Hyderabad (VNR VJIET)
-- Portfolio: [vsrimanvith.github.io](https://vsrimanvith.github.io)
+| | |
+|---|---|
+| **USC ATRI** | Full-stack systems for clinical research |
+| **TCS** | NLP and search / knowledge-graph products |
+| **IIT Hyderabad** | Network anomaly detection research |
 
-> *"Everyone should learn how to program because it teaches you how to think."* — Steve Jobs
+**Education**
+- **M.S., Computer Science** — University of Southern California
+- **B.Tech, CSE (Gold Medalist)** — JNTU Hyderabad (VNR VJIET)
+
+🌐 [vsrimanvith.github.io](https://vsrimanvith.github.io)
+
+> *"Everyone should learn how to program because it teaches you how to think."*  
+> — Steve Jobs
 
 ---
 
 ## Currently
 
-- Shipping internal tools and services for Physical Security video workflows
-- Caring about clear APIs, solid reliability, and thoughtful product UX
-- Happy to talk about backend engineering, full-stack systems, NLP, or research software
+- Building internal tools for **Physical Security video** workflows at Amazon
+- Sweating the details: **APIs**, reliability, and product UX that doesn’t get in the way
+- Always up for a chat about backend, full-stack, NLP, or research software
 
 ---
 
