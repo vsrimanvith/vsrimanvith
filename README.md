@@ -53,8 +53,7 @@ Software engineer who likes building systems that stay quiet in production — c
 - **M.S., Computer Science** — University of Southern California
 - **B.Tech, CSE (Gold Medalist)** — JNTU Hyderabad (VNR VJIET)
 
-> *"Everyone should learn how to program because it teaches you how to think."*  
-> — Steve Jobs
+> *"Everyone should learn how to program because it teaches you how to think." — Steve Jobs*  
 
 ---
 
